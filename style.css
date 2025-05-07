@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background: #ccc;
+  font-family: sans-serif;
+}
+
+#flipbook {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.page {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.click-zone {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.click-zone.left {
+  left: 0;
+}
+
+.click-zone.right {
+  right: 0;
+}

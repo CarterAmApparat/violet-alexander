@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Violet & Alexander</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js/turn.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page" style="background-image: url('images/bild1.jpg'); position: relative;">
+      <div class="click-zone right" onclick="$('#flipbook').turn('next')"></div>
+    </div>
+    <div class="page" style="background-image: url('images/bild2.jpg'); position: relative;">
+      <div class="click-zone left" onclick="$('#flipbook').turn('previous')"></div>
+      <div class="click-zone right" onclick="$('#flipbook').turn('next')"></div>
+    </div>
+    <div class="page" style="background-image: url('images/bild3.jpg'); position: relative;">
+      <div class="click-zone left" onclick="$('#flipbook').turn('previous')"></div>
+      <div class="click-zone right" onclick="$('#flipbook').turn('next')"></div>
+    </div>
+    <div class="page" style="background-image: url('images/bild4.jpg'); position: relative;">
+      <div class="click-zone left" onclick="$('#flipbook').turn('previous')"></div>
+      <div class="click-zone right" onclick="$('#flipbook').turn('next')"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
